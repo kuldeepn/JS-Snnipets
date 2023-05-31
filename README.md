@@ -1,5 +1,6 @@
-# JavaScript Snnipets
+# JavaScript Snippets
 
+## Snippet 1
 ```javascript
 const length = 4;
 const numbers = [];
