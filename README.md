@@ -1,6 +1,6 @@
 # JavaScript Snippets
 
-## Correct below JS code
+## 1. Correct below JS code
 ```javascript
 const length = 4;
 const numbers = [];
@@ -14,7 +14,7 @@ console.log(numbers);
 [ 5 ]   for loop ';' needs to remove
 Expected Output : [1,2,3,4]
 ```
-## What will be the output of below JS code
+## 2. What will be the output of below JS code
 ```javascript
 const clothes = ['jacket', 't-shirt'];
 clothes.length=0;
@@ -25,7 +25,7 @@ console.log(clothes[0]);
 undefined
 clothes.length = 0; deletes the array and hence clothes[0] does not exist
 ```
-## Write JS code for for multiply by 3 it should come 'Fizz' and for 5 'Buzz' and for 15 it should come 'FizzBuzz'
+## 3. Write JS code for for multiply by 3 it should come 'Fizz' and for 5 'Buzz' and for 15 it should come 'FizzBuzz'
 ```javascript
 for (var i = 1; i <= 100; i++) {
     if (i % 15 == 0) console.log("FizzBuzz");
