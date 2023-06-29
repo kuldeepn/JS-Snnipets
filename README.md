@@ -9,7 +9,7 @@ for (var i = 0; i < length; i++);{
 }
 console.log(numbers);
 ```
-## Output
+## Output ## Correction
 ```output
 [ 5 ]
 ```
