@@ -1,6 +1,6 @@
 # JavaScript Snippets
 
-## Snippet 1
+## Correct below JS code
 ```javascript
 const length = 4;
 const numbers = [];
