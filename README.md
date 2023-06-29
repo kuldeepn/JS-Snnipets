@@ -9,9 +9,10 @@ for (var i = 0; i < length; i++);{
 }
 console.log(numbers);
 ```
-## Output ## Correction
+## Output & Correction
 ```output
-[ 5 ]
+[ 5 ]   for loop ';' needs to remove
+Expected Output : [1,2,3,4]
 ```
 ## Snippet 2
 ```javascript
