@@ -9,6 +9,10 @@ for (var i = 0; i < length; i++);{
 }
 console.log(numbers);
 ```
+##Output
+```output
+[ 5 ]
+```
 ## Snippet 2
 ```javascript
 const clothes = ['jacket', 't-shirt'];
