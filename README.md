@@ -84,3 +84,17 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 [ 1, 5, 6, 7, 8, 9, 0 ]
 
 ```
+
+## 7. What will be the output of the below code
+```javascript
+console.log(![]);
+console.log([] !== []); // it should be uneuql then it will give 'true'
+console.log([]===![])
+```
+## Output & Explanation
+```output
+false
+true
+false
+-> Both empty array objects are kept in diff. memory location and both are different
+```
