@@ -72,4 +72,15 @@ function sum(a){
 ```output
 17
 ```
+## 5. Write an example of infinite currying
+```javascript
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+    var removed = arr.splice(1,3); // 1 starting position of array and 3 is ending position of an array 
+    
+    console.log(arr);
+```
+## Output
+```output
+[ 1, 5, 6, 7, 8, 9, 0 ]
 
+```
