@@ -98,3 +98,49 @@ true
 false
 -> Both empty array objects are kept in diff. memory location and both are different
 ```
+## 8. Deep copy & Shallow copy
+```javascript
+
+const student={
+    name:'kuldeep',
+    age:24,
+    address: {
+                street:'Hinjewadi',    
+                city:'Pune'
+    
+             }
+}
+
+let s2={
+    ...student,                           // Shallow Copy
+}
+console.log(s2);
+
+let s3=Object.assign({},student) // Shallow Copy
+console.log(s3);
+
+let s4=JSON.parse(JSON.stringify(student)); //Deep copy
+s4.address.city='Nagpur';
+console.log(s4);
+
+```
+## Output
+```output
+{
+  name: 'kuldeep',
+  age: 24,
+  address: { street: 'Hinjewadi', city: 'Pune' }
+}
+{
+  name: 'kuldeep',
+  age: 24,
+  address: { street: 'Hinjewadi', city: 'Pune' }
+}
+{
+  name: 'kuldeep',
+  age: 24,
+  address: { street: 'Hinjewadi', city: 'Nagpur' }
+}
+
+```
+
