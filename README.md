@@ -112,11 +112,11 @@ const student={
 }
 
 let s2={
-    ...student,                           // Shallow Copy
+    ...student,                           //Shallow Copy
 }
 console.log(s2);
 
-let s3=Object.assign({},student) // Shallow Copy
+let s3=Object.assign({},student) //Shallow Copy
 console.log(s3);
 
 let s4=JSON.parse(JSON.stringify(student)); //Deep copy
