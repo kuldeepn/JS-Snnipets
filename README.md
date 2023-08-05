@@ -144,3 +144,23 @@ console.log(s4);
 
 ```
 
+## 9. Write a code to check given string is palindrome or not
+```javascript
+var string = 'aba';
+
+function pal(str){
+    let res=str.split('').reverse().join("");
+    if (res==str){
+    console.log('Palindrome');
+}
+else{
+    console.log('Not a Palindrome');
+}
+}
+pal(string);
+```
+## Output & Explanation
+```output
+Palindrome
+```
+
