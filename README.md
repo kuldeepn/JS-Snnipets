@@ -164,3 +164,42 @@ pal(string);
 Palindrome
 ```
 
+## 10. Call,Apply & Bind
+```javascript
+//Call
+
+let userDetails={
+    name:'kuldeep',
+    age:28,
+    city:'Pune'
+}
+
+function printDetails(city,country){
+    console.log(this.name,''+city,''+country);
+}
+
+let userDetails2={
+    name:'deepa',
+    age:27,
+    city:'Pune'
+}
+
+printDetails.call(userDetails);
+printDetails.call(userDetails2);
+
+//Apply
+printDetails.apply(userDetails,['Nagpur','India']);
+
+//Bind
+let newFun=printDetails.bind(userDetails2,'Nagpur','Nepal');
+
+newFun();
+```
+## Output & Explanation
+```output
+kuldeep undefined undefined
+deepa undefined undefined
+kuldeep Nagpur India
+deepa Nagpur Nepal
+```
+
