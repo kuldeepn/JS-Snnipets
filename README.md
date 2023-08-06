@@ -223,3 +223,20 @@ console.log('Count =',+count);
 [ 3, 1 ]
 Count = 2
 ```
+## 12. JS code to sort a Number array
+```javascript
+
+let sortArray=[1,5,65,56,55,2,5,6];
+
+let newArray=sortArray.sort((a,b)=>{
+    return a-b;
+})
+
+console.log(newArray);
+
+```
+## Output & Explanation
+```output
+[1, 2, 5, 5, 6, 55, 56, 65]
+
+```
