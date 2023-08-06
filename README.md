@@ -202,4 +202,24 @@ deepa undefined undefined
 kuldeep Nagpur India
 deepa Nagpur Nepal
 ```
+## 11. Find the duplicate element and count of an array
+```javascript
+let duplicateArray=[1,3,4,3,6,1];
 
+function duplicate(ele,index,arr){
+    return arr.indexOf(ele) !== index;
+}
+
+const dup=duplicateArray.filter(duplicate);
+
+console.log(dup);
+
+//Count
+let count =dup.length;
+console.log('Count =',+count);
+```
+## Output & Explanation
+```output
+[ 3, 1 ]
+Count = 2
+```
