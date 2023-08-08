@@ -240,3 +240,30 @@ console.log(newArray);
 [1, 2, 5, 5, 6, 55, 56, 65]
 
 ```
+
+## 13. Reverse word in a string without changing it's position
+```javascript
+
+var str="Welcome to Programiz";
+
+function xyz(strl){
+    
+    let words=strl.split(' ');
+    
+  let res=words.map(x=>
+      x.split('').reverse().join(''));
+       
+  return res.join(' ')
+   
+}
+
+let rev=xyz(str);
+
+console.log(rev)
+
+```
+## Output & Explanation
+```output
+emocleW ot zimargorP
+
+```
