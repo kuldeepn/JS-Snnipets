@@ -267,3 +267,29 @@ console.log(rev)
 emocleW ot zimargorP
 
 ```
+## 14. Function Borrowing
+```javascript
+
+const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen",
+}
+
+let fullName = person.fullName.bind(member);
+
+console.log(fullName());
+
+```
+## Output & Explanation
+```output
+Hege Nilsen
+
+```
