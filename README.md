@@ -293,3 +293,30 @@ console.log(fullName());
 Hege Nilsen
 
 ```
+## 15. Another way to do function currying
+```javascript
+
+// add(2)(3)(4) => 9
+
+// add(2)(3) => 5
+
+// add(2)(3)(4)(9) => 18
+
+function add(a){
+    let v= function(b){
+      return add(a+b);
+    }
+     v.valueOf = v.toString = function() {
+    return a;
+  };
+    return v;
+}
+
+console.log(+add(2)(3)(4)(4));
+
+```
+## Output & Explanation
+```output
+13
+Explanation: + operator will invoke valueOf and valueOf will give primitive value from function
+```
