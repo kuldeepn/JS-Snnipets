@@ -204,7 +204,7 @@ deepa Nagpur Nepal
 ```
 ## 11. Find the duplicate element and count of an array
 ```javascript
-let duplicateArray=[1,3,4,3,6,1];
+let duplicateArray=[1,3,4,3,6,1,1];
 
 function duplicate(ele,index,arr){
     return arr.indexOf(ele) !== index;
@@ -212,11 +212,13 @@ function duplicate(ele,index,arr){
 
 const dup=duplicateArray.filter(duplicate);
 
-console.log(dup);
+const uniqueDup=[...new Set(dup)]  //It will give the unique duplicates
+
+console.log(uniqueDup)
 
 //Count
-let count =dup.length;
-console.log('Count =',+count);
+let count =uniqueDup.length;
+console.log('Count =',count);
 ```
 ## Output & Explanation
 ```output
