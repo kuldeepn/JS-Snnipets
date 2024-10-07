@@ -360,3 +360,25 @@ typeof 1: The typeof operator returns the type of its operand. Since 1 is a numb
 
 typeof "number": Now, the typeof operator is applied again to "number", which is a string. So, typeof "number" evaluates to "string".
 ```
+## 18. Promise example
+```javascript
+const promiseFun= new Promise((resolve,reject)=>{
+   let success=true;
+    
+    if(success){
+        resolve("success");
+    }else{
+        reject("rejected")
+    }
+})
+
+promiseFun.then((msg)=>{
+    console.log(msg)
+}).catch((msg)=>{
+    console.log(msg)
+})
+```
+## Output & Explanation
+```output
+success
+```
