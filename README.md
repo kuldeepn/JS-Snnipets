@@ -322,7 +322,7 @@ console.log(+add(2)(3)(4)(4));
 13
 Explanation: + operator will invoke valueOf and valueOf will give primitive value from function
 ```
-## 16. JS code to sort a Number array
+## 16. What is the output of the following
 ```javascript
 
 function x(){
@@ -347,4 +347,16 @@ Namaste Javascript
 6
 - Issue with var in the for loop: var is function-scoped, so the variable i doesn't maintain its value in each iteration due to how closures work in JavaScript. Instead, it will log 6 five times because by the time the setTimeout callback executes, the loop has already finished and i has a value of 6.
 - To fix the issue with var, you can either use let
+```
+
+## 17.  What is the output of the following
+```javascript
+console.log(typeof typeof 1)
+```
+## Output & Explanation
+```output
+string
+typeof 1: The typeof operator returns the type of its operand. Since 1 is a number, typeof 1 evaluates to the string "number".
+
+typeof "number": Now, the typeof operator is applied again to "number", which is a string. So, typeof "number" evaluates to "string".
 ```
