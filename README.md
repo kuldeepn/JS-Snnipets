@@ -322,3 +322,29 @@ console.log(+add(2)(3)(4)(4));
 13
 Explanation: + operator will invoke valueOf and valueOf will give primitive value from function
 ```
+## 16. JS code to sort a Number array
+```javascript
+
+function x(){
+    for(var i=1;i<=5;i++){   
+        setTimeout(()=>{
+            console.log(i);
+        },1000)
+    }
+    console.log("Namaste Javascript")
+}
+
+x()
+
+```
+## Output & Explanation
+```output
+Namaste Javascript
+6
+6
+6
+6
+6
+- Issue with var in the for loop: var is function-scoped, so the variable i doesn't maintain its value in each iteration due to how closures work in JavaScript. Instead, it will log 6 five times because by the time the setTimeout callback executes, the loop has already finished and i has a value of 6.
+- To fix the issue with var, you can either use let
+```
