@@ -33,3 +33,10 @@ or any other markup language that is being used in the document.
 
 Using anchor tag `<a href="url">Home</a>`
 
+# 5. What are attributes ?
+
+All HTML elements can have attributes to specify additional details.
+
+```html
+<b name="hello">hello</b>
+```
