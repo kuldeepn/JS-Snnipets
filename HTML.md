@@ -19,14 +19,17 @@ or any other markup language that is being used in the document.
 
 # 3. What are the elements & tags ?
 
-`HTML Tag:` Tags are the starting and ending part of an HTML element ```html <b></b> ```
+`HTML Tag:` Tags are the starting and ending part of an HTML element 
+```html
+<b></b>
+```
 
-`HTML Elements:` Elements enclosed the content in between the tags ```<b> This is the content </b>```
+`HTML Elements:` Elements enclosed the content in between the tags
+```html
+<b> This is the content </b>
+```
 
 # 4. How to redirect to a particular section of a page using HTML?
 
 Using anchor tag `<a href="url">Home</a>`
-```html
-<b></b>
 
-```
