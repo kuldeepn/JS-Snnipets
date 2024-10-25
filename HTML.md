@@ -7,7 +7,7 @@
 4. Drag and drop were not allowed                
                                                                   
 `HTML5`
-1. It support audio and video with the use of <audio> and <video> tag   
+1. It support audio and video with the use of `<audio>` and `<video>` tag   
 2. It uses SQL DB and application cache to store temporary data
 3. Allow JS to run in the background this is possible because of JS web worker API in HTML5
 4. It allows drag and drop effect
