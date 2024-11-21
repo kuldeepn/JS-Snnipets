@@ -36,7 +36,12 @@ Using anchor tag `<a href="url">Home</a>`
 # 5. What are attributes ?
 
 All HTML elements can have attributes to specify additional details.
+Here 'name' is an attribute.
 
 ```html
 <b name="hello">hello</b>
 ```
+
+# 6. Are `<b>`and <strong> tags are same ?
+
+
