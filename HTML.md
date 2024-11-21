@@ -42,6 +42,12 @@ Here 'name' is an attribute.
 <b name="hello">hello</b>
 ```
 
-# 6. Are `<b>`and <strong> tags are same ?
+# 6. Are `<b>` and `<strong>` tags are same ?
 
-
+`<strong>` tag: 
+1. It has semantic meaning and it implies that the text is important.
+2. It is SEO important.
+                   
+`<b>` tag: 
+1. It has not any semantic meaning it only applies for visual styling.
+2. Not SEO friendly.
