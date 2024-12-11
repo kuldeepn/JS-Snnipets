@@ -388,6 +388,12 @@ success
 //NOTE: Using reduce() method
 
 ```javascript
+const obj = [
+    {apple: 2, orange: 1, banana: 3, grapes: 1},
+    {apple: 2, orange: 1, banana: 3},
+    {apple: 2, orange: 1, banana: 3, grapes: 2},
+    ];
+
  const result = obj.reduce((acc,item)=>{
         apple=acc.apple+item.apple;
         orange=acc.orange+item.orange;
