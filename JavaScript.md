@@ -382,3 +382,30 @@ promiseFun.then((msg)=>{
 ```output
 success
 ```
+## 19. const obj = [{apple: 2, orange: 1, banana: 3, grapes: 1},{apple: 2, orange: 1, banana: 3},{apple: 2, orange: 1, banana: 3, grapes: 2},];
+//Expected Result:
+//{apple: 6, orange: 3, banana: 9, grapes: 3}
+//NOTE: Using reduce() method
+
+```javascript
+ const result = obj.reduce((acc,item)=>{
+        apple=acc.apple+item.apple;
+        orange=acc.orange+item.orange;
+        banana=acc.banana+item.banana;
+        grapes=(acc.grapes || 0) + (item.grapes || 0)
+        
+        return {
+            apple,
+            orange,
+            banana,
+            grapes
+        }
+    },)
+    
+    console.log(result);
+```
+## Output & Explanation
+```output
+{ apple: 6, orange: 3, banana: 9, grapes: 3 }
+```
+
