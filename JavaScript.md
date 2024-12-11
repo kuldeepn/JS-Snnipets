@@ -410,4 +410,35 @@ console.log(result);
 ```output
 { apple: 6, orange: 3, banana: 9, grapes: 3 }
 ```
+## 20. Flatten the nested array
 
+```javascript
+
+let arr=[1,3,4,[4,5,7],5,2,[[5]]];
+
+let newArray=[];
+
+function flattenArray(arr){
+    
+    arr.map((item)=>{
+        if(Array.isArray(item)){
+            flattenArray(item);
+        }else{
+            newArray.push(item);
+        }
+    })
+    
+}
+
+flattenArray(arr);
+
+console.log(newArray);
+
+```
+## Output & Explanation
+```output
+[
+  1, 3, 4, 4, 5,
+  7, 5, 2, 5
+]
+```
