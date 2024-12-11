@@ -389,26 +389,22 @@ success
 
 ```javascript
 const obj = [
-    {apple: 2, orange: 1, banana: 3, grapes: 1},
-    {apple: 2, orange: 1, banana: 3},
-    {apple: 2, orange: 1, banana: 3, grapes: 2},
-    ];
+    { apple: 2, orange: 1, banana: 3, grapes: 1 },
+    { apple: 2, orange: 1, banana: 3 },
+    { apple: 2, orange: 1, banana: 3, grapes: 2 },
+];
 
- const result = obj.reduce((acc,item)=>{
-        apple=acc.apple+item.apple;
-        orange=acc.orange+item.orange;
-        banana=acc.banana+item.banana;
-        grapes=(acc.grapes || 0) + (item.grapes || 0)
-        
-        return {
-            apple,
-            orange,
-            banana,
-            grapes
-        }
-    },)
-    
-    console.log(result);
+const result = obj.reduce((acc, item) => {
+    return {
+        apple: acc.apple + item.apple,
+        orange: acc.orange + item.orange,
+        banana: acc.banana + item.banana,
+        grapes: (acc.grapes || 0) + (item.grapes || 0),
+    };
+}, { apple: 0, orange: 0, banana: 0, grapes: 0 }); // Initial value
+
+console.log(result);
+
 ```
 ## Output & Explanation
 ```output
