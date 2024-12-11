@@ -416,6 +416,8 @@ console.log(result);
 
 let arr=[1,3,4,[4,5,7],5,2,[[5]]];
 
+// console.log(arr.flat(Infinity));
+
 let newArray=[];
 
 function flattenArray(arr){
