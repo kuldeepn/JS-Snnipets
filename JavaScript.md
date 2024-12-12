@@ -444,3 +444,37 @@ console.log(newArray);
   7, 5, 2, 5
 ]
 ```
+
+## 21. let obj = [ { Sno: 1, score: 20 }, { Sno: 2, score: 30 }, { Sno: 1, score: 50 },];
+// Expected [ { Sno: 1, score: 70 }, { Sno: 2, score: 30 } ]
+
+```javascript
+let obj = [
+    { Sno: 1, score: 20 },
+    { Sno: 2, score: 30 },
+    { Sno: 1, score: 50 },
+];
+
+const result=Object.values(
+    obj.reduce((acc,item)=>{
+// check if Sno present in accumulator
+        if(!acc[item.Sno]){ 
+            acc[item.Sno]={Sno:item.Sno,score:item.score}
+        }else{
+// if Present then add that score with current item of score
+            acc[item.Sno].score += item.score 
+        }
+        
+        return acc;
+        
+    },[])
+    )
+    
+    console.log(result)
+
+```
+## Output & Explanation
+```output
+[ { Sno: 1, score: 70 }, { Sno: 2, score: 30 } ]
+
+```
